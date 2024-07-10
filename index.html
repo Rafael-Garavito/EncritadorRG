@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es-col">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador RG</title>
+    <Link rel="stylesheet" href="styles/style.css"></Link>
+</head>
+
+<body class="formato">
+    <header>
+    </header>
+    <main>
+        <section>
+        <h1 class="titulo">Encriptador</strong></h1>
+            <div>
+                <input type="text" id="textoOriginal" class="CajaTextoIngreso">
+                <input type="text" id="textoSalida" class="CajaTextoSalida" readonly style="background-size: cover; height: 200px;">
+                <p class="importante" id="valorInicial" target="_blank">
+                <img class="imagenLogo" src="assets/importante.png" alt="logo import"> Solo letras minisculas y sin acentos</p>
+            </div>
+            <div class="botonera">
+                <button onclick="cifrarTexto();" class="container__boton">Cifrar</button>
+                <button onclick="descifrarTexto();" class="container__boton" id="reiniciar" disabled >Descifrar</button>  
+            </div>
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Rafael Garavito - 305 874 1019</p>
+    </footer>   
+    
+    <script src="app.js" defer></script>
+    
+</body>
+</html>

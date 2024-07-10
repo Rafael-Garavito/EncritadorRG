@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+:root{
+    --color-primario: #0A3871;
+    --color-secundario: #eff1fa;
+    --color-terciario: white;
+    --color-animalink: #505050;
+
+    --fuente-Principal: 'Inter', sans serif;
+    
+}
+
+*{ /* este es para confugurar el universo de la pagina*/
+    margin: 0.50%;
+    padding: 0.50%;
+    color: var(--color-secundario);
+}
+
+.formato{
+    /**background-image: url("../img/FondoOjo.jpg");/*/
+    padding-left: 1%;
+    background-color: var(--color-secundario);
+}
+.titulo{
+    font-family: var(--fuente-Principal);
+    color: var(--color-primario);
+}
+.imagenlogo{
+    height: 10%;
+    font-family: var(--fuente-Principal);
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+}
+.CajaTextoIngreso{
+    border: 2px;
+    border-radius: 16px;
+    background: var(--color-terciario);
+    font-size: 2rem;
+    font-family: var(--fuente-Principal);
+    color: var(--color-primario);
+    text-align: center;
+    background-color: var(--color-secundario);
+    height: 200px;
+    width: 65%;
+    gap: 5px;
+}
+.CajaTextoSalida{
+    border: 1px;
+    position: relative;
+    border-radius: 16px;
+    border-color: var(--color-secundario);
+    font-size: 1.5rem;
+    font-family: var(--fuente-Principal);
+    color: var(--color-primario);
+    text-align: center;
+    background: var(--color-primario);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--color-terciario);
+    flex-direction: column-reverse;
+    height: 200px;
+    padding: 5px;
+    gap:5px;
+}
+.importante{
+    /*/width: 55%;*/
+    text-align: center;
+    padding: 12px 0;
+    font-family: var(--fuente-Principal);
+    font-size: 1rem;
+    text-decoration: none;/*para quitar la linea baja que automaticamente se genera para los link*/
+    color: var(--color-primario);
+    display: flex;
+    gap: 5px;
+}
+
+
+.container__boton {
+    width: 450px;
+    border-radius: 8px;
+    background: var(--color-primario);
+    font-family: var(--fuente-Principal);
+    font-size: 1.25rem;
+    font-weight: 700;
+    border: none;
+    padding: 12px;
+    text-align: center;
+    margin-top: 1.25rem;
+    gap: 15px;
+}
+.container__boton:disabled {
+    background: var(--color-animalink);
+}
+.footer{
+    height: 35px;
+    background-color: var(--color-animalink);
+    font-family: var(--fuente-Principal);
+    font-size: 1rem;
+    padding: 1px;
+    color: var(--color-primario);
+    text-align: center;
+    padding: 2% 0% 0% 15%;
+    position: relative;
+    animation: mymove 6s infinite;
+    animation-delay: 2s;
+}
+
+
+@media (max-width: 1200px) {
+    .header{
+        padding: 3%;
+    }
+    .CajaTextoIngreso{
+        width: 100%;
+    }    
+    .CajaTextoSalida{
+        justify-content: center;
+        width: 100%;
+        flex-direction: d;
+    }
+}
